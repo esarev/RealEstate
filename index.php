@@ -140,14 +140,14 @@
                 ?>
                 <div class="reviews-item">
                   <div class="reviews-item__top">
-                    <img src="<?php echo get_post_thumbnail_url()?>" alt="avatar" class="reviews-item__avatar" />
+                    <img src="<?php echo get_the_post_thumbnail_url()?>" alt="avatar" class="reviews-item__avatar" />
                     <div class="reviews-item__info">
-                      <h3 class="reviews-item__title"><?php echo get_the_excerpt(); ?></h3>
-                      <span class="reviews-item__name"> <?php the_title() ?> </span>
+                      <h3 class="reviews-item__title"><?php echo get_the_excerpt()?></h3>
+                      <span class="reviews-item__name"><?php the_title()?></span>
                     </div>
                   </div>
                   <p class="reviews-item__text">
-                    <?php the_content(); ?>
+                    <?php the_content()?>
                   </p>
                 </div>
                 <?php 
